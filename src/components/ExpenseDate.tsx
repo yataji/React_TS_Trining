@@ -9,10 +9,10 @@ const ExpenseDate: React.FC<Yataji> = ({dt1, tit}) => {
     const year = dt1.getFullYear();
     return (
         <div className=" flex flex-row justify-start items-center">
-            <div className="flex flex-col items-center justify-center mx-5 bg-[#262526] w-28 border-2 rounded-xl">
-                <p className=" text-white " >{month}</p>
-                <p className=" text-white " >{year}</p>
-                <p className=" text-white " >{day}</p>  
+            <div className="flex flex-col items-center justify-center mx-5 bg-[#262526] w-24 border-2 rounded-xl">
+                <p className=" text-white font-bold text-sm" >{month}</p>
+                <p className=" text-white font-light text-xs" >{year}</p>
+                <p className=" text-white text-lg" >{day}</p>  
             </div>
             <p className=" text-white">{tit}</p>
         </div>
